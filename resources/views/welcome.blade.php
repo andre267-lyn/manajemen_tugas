@@ -29,8 +29,8 @@
 </head>
 <body>
     <div class="container text-center">
-        <h1 class="display-4">Welcome to Task Management App</h1>
-        <p class="lead">Your simple task management solution built with Laravel</p>
+        <h1 class="display-4">Manajemen Tugas</h1>
+        <p class="lead">Tempo Media Group</p>
         <div class="mt-4">
             <a href="/login" class="btn btn-custom btn-lg text-white">Login</a>
             <a href="/register" class="btn btn-outline-light btn-lg">Register</a>
