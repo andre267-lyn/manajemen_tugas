@@ -3,24 +3,6 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-
-class Task extends Model
-{
-    use HasFactory;
-
-    protected $fillable = [
-        'title',
-        'description',
-        'status',
-        'user_id',
-    ];
-}
-
-// File: app/Models/User.php
-namespace App\Models;
-
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
