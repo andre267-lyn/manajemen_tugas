@@ -15,6 +15,10 @@ class CreateTasksTable extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
+            $table->string('title');  // Kolom untuk judul tugas
+            $table->text('description')->nullable();  // Kolom untuk deskripsi tugas
+            $table->enum('status', ['pending', 'in-progress', 'completed'])->default('pending');  // Kolom untuk status tugas
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');  // Kolom untuk relasi dengan user
             $table->timestamps();
         });
     }
